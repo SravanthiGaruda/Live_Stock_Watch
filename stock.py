@@ -13,7 +13,7 @@ def getStockPrice(symbol):
     return None
 
 def realTimeStockPrice():
-    company_names = ['RELIANCE.NS', 'HDFCBANK.NS', 'TCS.NS', 'INFY.NS', 'SBIN.NS', 'KOTAKBANK.NS', 'LT.NS', 'HINDUNILVR.NS', 'ICICIBANK.NS']
+    company_names = ['RELIANCE.NS', 'HDFCBANK.NS', 'TCS.NS', 'INFY.NS', 'SBIN.NS', 'KOTAKBANK.NS', 'HINDUNILVR.NS', 'ICICIBANK.NS']
     stock_prices = {}
     for name in company_names:
         price = getStockPrice(name)
