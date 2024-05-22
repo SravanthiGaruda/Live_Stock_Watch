@@ -4,7 +4,6 @@ This project aims to provide real-time stock visualization using a combination o
 
 Prerequisites
 
-- Homebrew
 - Apache Cassandra
 - Grafana
 - Python 3.x
