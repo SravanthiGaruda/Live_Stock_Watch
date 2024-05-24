@@ -24,13 +24,13 @@ Installation
         					price DECIMAL);
 
 2.	Grafana
-   a.	Installations to be done on MacOS
-      •	Download Grafana:
-        - curl -O https://dl.grafana.com/enterprise/release/grafana-enterprise-11.0.0.darwin-amd64.tar.gz
-      •	Extract the downloaded file: 
-        - tar -zxvf grafana-enterprise-11.0.0.darwin-amd64.tar.gz
-      •	Navigate to the Grafana directory: 
-        - cd grafana-11.0.0
+   Installations to be done on MacOS
+      -	Download Grafana:
+        --> curl -O https://dl.grafana.com/enterprise/release/grafana-enterprise-11.0.0.darwin-amd64.tar.gz
+      -	Extract the downloaded file: 
+        --> tar -zxvf grafana-enterprise-11.0.0.darwin-amd64.tar.gz
+      -	Navigate to the Grafana directory: 
+        --> cd grafana-11.0.0
       •	Start Grafana server:  ./bin/grafana-server
       •	Keep the server running  and open Grafana in your brower:  
         - http://localhost:3000
