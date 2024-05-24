@@ -3,7 +3,6 @@
 This project aims to provide real-time stock visualization using a combination of Python, Yahoo Finance API, Apache Cassandra, and Grafana. The workflow includes fetching real-time stock data using Python, storing it in Cassandra, and visualizing it using Grafana.
 
 Prerequisites
-
 - Apache Cassandra
 - Grafana
 - Python 3.x
@@ -27,33 +26,33 @@ Installation
 2.	Grafana
    a.	Installations to be done on MacOS
       •	Download Grafana:
-        o	curl -O https://dl.grafana.com/enterprise/release/grafana-enterprise-11.0.0.darwin-amd64.tar.gz
+        - curl -O https://dl.grafana.com/enterprise/release/grafana-enterprise-11.0.0.darwin-amd64.tar.gz
       •	Extract the downloaded file: 
-        o	tar -zxvf grafana-enterprise-11.0.0.darwin-amd64.tar.gz
+        - tar -zxvf grafana-enterprise-11.0.0.darwin-amd64.tar.gz
       •	Navigate to the Grafana directory: 
-        o	 cd grafana-11.0.0
+        - cd grafana-11.0.0
       •	Start Grafana server:  ./bin/grafana-server
       •	Keep the server running  and open Grafana in your brower:  
-        o	http://localhost:3000
-        o	log in with the default credentials 
-          	username: admin
-          	password: admin
+        - http://localhost:3000
+        - log in with the default credentials 
+          - username: admin
+          -  password: admin
       •	Add Cassandra to your Data Source:  
-        o	Go to Configuration -> Data Source
-        o  Click on `Add data source`
-        o	Select `Apache Cassandra`
-        o	Provide the host details(e.g., 127.0.0.1:9042)
-        o	Keyspace (database name : `stock_db`)
+        - Go to Configuration -> Data Source
+        - Click on `Add data source`
+        - Select `Apache Cassandra`
+        -	Provide the host details(e.g., 127.0.0.1:9042)
+        -	Keyspace (database name : `stock_db`)
       •	Create Visualization:
-        o	Go to Create -> Dashboard
-        o	Add a new visualization -> select database -> and select `Query`
-        o	Write a query to fetch data from the Cassandra database:  
-          	select * from stock_db.stockprice where name=`stock_name` ALLOW FILTERING;
-        o	Configure the visualizations as needed.
+        -	Go to Create -> Dashboard
+        -	Add a new visualization -> select database -> and select `Query`
+        -	Write a query to fetch data from the Cassandra database:  
+          -	select * from stock_db.stockprice where name=`stock_name` ALLOW FILTERING;
+        -	Configure the visualizations as needed.
 
 3.	Python Script
   •	Install required libraries:
-   o	pip install yfinance cassandra-driver
+   -	pip install yfinance cassandra-driver
 
 4.	Things to Change in Code:
   •	Database Name (eg: stock_db)
