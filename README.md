@@ -12,10 +12,10 @@ Installation
 
 1.	Apache Cassandra
   a.	Installations to be done on MacOS
-    •	Install Apache Cassandra using Homebrew: brew install Cassandra
-    •	Start Cassandra service:  brew services start Cassandra
-    •	Access Cassandra shell (CQLSH): cqlsh
-    •	Create the database and table in Cassandra:
+    -	Install Apache Cassandra using Homebrew: brew install Cassandra
+    -	Start Cassandra service:  brew services start Cassandra
+    -	Access Cassandra shell (CQLSH): cqlsh
+    -	Create the database and table in Cassandra:
       1.	CREATE KEYSPACE stock_data WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
       2.	 USE stock_data;
       3.	CREATE TABLE stocks (
